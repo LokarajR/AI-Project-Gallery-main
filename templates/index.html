@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GPL AST Detector</title>
+</head>
+
+<body>
+
+<h2>AST Based GPL Compliance Detector</h2>
+
+<form method="POST">
+
+Repository 1 URL:<br>
+<input type="text" name="repo1"><br><br>
+
+Repository 2 URL:<br>
+<input type="text" name="repo2"><br><br>
+
+<button type="submit">Check Similarity</button>
+
+</form>
+
+{% if result %}
+<h3>Similarity Score: {{result}}</h3>
+{% endif %}
+
+</body>
+</html>
